@@ -4,14 +4,115 @@
     <style>
       body {
         background-color: #1f1c1c;
+        overflow-x: hidden;
       }
 
       .Website-Heading {
   			float: right;
+        color: #f0ebdd;
       }
+
+      main {
+        padding: 40px 25px;
+        transition: .5s ease-in-out;
+        width: 100%;
+      }
+      
+      nav {
+        background: #36a;
+        bottom: 0;
+        box-shadow: 0 0 5px #666;
+        height: 100%;
+        left: -17.5rem;
+        padding-top: 38px;
+        position: absolute;
+        top: 0;
+        transition: .5s ease-in-out;
+        width: 17rem;
+        user-select: none;
+      }
+      
+      nav a {
+        color: #eee;
+        display: block;
+        padding: 12px 16px;
+        transition: .5s;
+        text-decoration: none;
+        -webkit-user-drag: none;
+      }
+      
+      nav a:hover {
+        background-color: #39c;
+      }
+      
+      #nav-collapse {
+        padding: 8px 12px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      #nav-expand {
+        background-color: #333;
+        color: #eee;
+        display: block;
+        left: 0;
+        top: 0;
+        padding: 8px 12px;
+        position: absolute;
+        text-decoration: none;  
+        transition: .5s linear;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+      
+      #nav-expand:focus {
+        opacity: 0;
+      }
+      
+      #nav-expand:focus ~ main {
+        margin-left: 17rem;
+        transition-delay: .25s;
+      }
+      
+      #nav-expand:focus ~ nav {
+        left: 0;
+        transition-delay: .25s;
+      }
+      
+      #nav-expand:hover {
+        background-color: #369;
+        color: #fff;
+      }
+      
+      .icon {
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 12px;
+        width: 12px;
+      }
+
     </style>
   </head>
   <body>
     <h1 class="Website-Heading">CodeMaker</h1>
+    <a id="nav-expand" href="#">
+      <ion-icon name="menu-outline"></ion-icon>
+    </a>
+    <nav>
+      <a id="nav-collapse" href="#">
+        <ion-icon name="close-outline"></ion-icon>
+      </a>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+    </nav>
+    <main class="main">
+      
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
