@@ -108,23 +108,30 @@
         <ion-icon name="close-outline" size="large"></ion-icon>
       </a>
       <a href="index.html" class="nav-links">Home <ion-icon name="home-outline"></ion-icon></a>
-      <a href="#" class="nav-links">The Basics <ion-icon name="desktop-outline"></ion-icon></a>
-      <a href="#" class="nav-links">HTML <ion-icon name="logo-html5"></ion-icon></a>
-      <div class="dropdown">
-        <button class="nav" style="font-family: sans-serif, Trebuchet Ms;">HTML <ion-icon name="logo-html5"></ion-icon></button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-    ` </div>
-      <a href="#" class="nav-links">CSS <ion-icon name="logo-css3"></ion-icon></a>
-      <a href="#" class="nav-links">Javascript <ion-icon name="logo-javascript"></ion-icon></a>
+      <a href="#" class="nav-links"><ion-icon name="desktop-outline" size="large"></ion-icon> The Basics</a>
+      <a href="#" class="nav-links"><ion-icon name="logo-html5" size="large"></ion-icon> HTML</a>
+      <a href="#" class="nav-links"><ion-icon name="logo-css3" size="large"></ion-icon> CSS</a>
+      <a href="#" class="nav-links"><ion-icon name="logo-javascript" size="large"></ion-icon> Javascript</a>
     </nav>
     <main class="main">
       <h1 class="Website-Heading">CodeMaker</h1>
     </main>
+    <script>
+      function search_animal() {
+        let input = document.getElementById('searchbar').value
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName('animals');
+ 
+        for (i = 0; i < x.length; i++) {
+          if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+          }
+          else {
+            x[i].style.display = "list-item";
+          }
+        }
+      }
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
