@@ -103,6 +103,7 @@
 
       #search {
         top: 0;
+        color: white;
       }
 
       #search:hover {
@@ -113,9 +114,6 @@
     <link rel="stylesheet" href="topnav.css">
   </head>
   <body>
-    <a id="nav-expand" href="#">
-      <ion-icon name="menu-outline" size="large"></ion-icon>
-    </a>
     <nav>
       <a id="nav-collapse" href="#">
         <ion-icon name="close-outline" size="large"></ion-icon>
@@ -128,8 +126,11 @@
     </nav>
     <main class="main">
       <div class="topnav">
+        <a id="nav-expand" href="#">
+          <ion-icon name="menu-outline" size="large"></ion-icon>
+        </a>
         <h1 class="Website-Heading">CodeMaker</h1>
-        <a href="search.html" style="float: right; color: white; top: 0;" id="search"><ion-icon name="search" size="large"></ion-icon></a>
+        <a href="search.html" style="float: right;" id="search"><ion-icon name="search" size="large"></ion-icon></a>
       </div>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
