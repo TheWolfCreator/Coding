@@ -17,7 +17,13 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin: 200px;
+          vertical-align: top;
+      }
+
+      .search-results {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
       }
 
       .barofsearch {
@@ -97,7 +103,8 @@
         type="text" name="search"
         placeholder="Search...">
       </div>
-   
+    </div>
+     <div class="search-results">
       <ul id='list'>
           <li class="animals"><a href="index.html"><ion-icon name="home-outline" size="large"></ion-icon> Home</a></li>
           <li class="animals"><a><ion-icon name="home-outline" size="large"></ion-icon> The Basics</a></li>
@@ -105,7 +112,7 @@
           <li class="animals"><a><ion-icon name="logo-css3" size="large"></ion-icon> CSS</a></li>
           <li class="animals"><a><ion-icon name="logo-css3" size="large"></ion-icon> Javascript</a></li>
       </ul>
-    </div>
+     </div> 
     <script>
       function search_animal() {
         let input = document.getElementById('searchbar').value
