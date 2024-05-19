@@ -72,6 +72,10 @@
         margin-right: 16px;
       }
 
+      .container-2 {
+        align-items: center;
+      }
+      
       a {
         text-decoration: none;
         color: black;
@@ -107,6 +111,7 @@
         placeholder="Search...">
       </div>
     </div>
+    <div class="container-2">    
      <div class="search-results">
       <ul id='list'>
           <li class="animals"><a href="index.html"><ion-icon name="home-outline" size="large"></ion-icon> Home</a></li>
@@ -115,7 +120,8 @@
           <li class="animals"><a><ion-icon name="logo-css3" size="large"></ion-icon> CSS</a></li>
           <li class="animals"><a><ion-icon name="logo-css3" size="large"></ion-icon> Javascript</a></li>
       </ul>
-     </div> 
+     </div>
+    </div>
     <script>
       function search_animal() {
         let input = document.getElementById('searchbar').value
